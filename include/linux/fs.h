@@ -1426,6 +1426,7 @@ struct super_block {
 	 * generic_show_options()
 	 */
 	char __rcu *s_options;
+        int cleancache_poolid;
 	const struct dentry_operations *s_d_op; /* default d_op for dentries */
 	/*LGE_CHANGE_S : seven.kim@lge.com to avoid micron eMMC data partition crash */
 	#ifdef CONFIG_MACH_LGE
